@@ -6,7 +6,7 @@
     "install-server": "cd backend && npm install",
     "start-server": "cd backend && npm install rxjs && node index.js",
     "install-client": "npm install",
-    "build-client": "ng build --prod",
+    "build-client": "ng build",
     "start-client": "ng serve",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
