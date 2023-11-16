@@ -1,0 +1,78 @@
+<div class="love_story_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="section_title text-center">
+          <img src="../../assets/img/banner/flowers.png" alt="" />
+          <h3>Infos Réservation</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div
+        class="col-xl-4 col-lg-4"
+        *ngFor="let reservation of reservationsInfo"
+      >
+        <div class="single_program ">
+          <div class="program_inner card" style="background-color: #f5f5dc">
+            <div class="card-body">
+              <div class="card-text">Title: {{ reservation.Title }}</div>
+              <p>dated: {{ reservation.dated }}</p>
+              <p>datef: {{ reservation.datef }}</p>
+              <div class="card-text">Montant: {{ reservation.Montant }} DT</div>
+              <p>description: {{ reservation.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- our_love-story -->
+
+<div class="love_story_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="section_title text-center">
+          <img src="../../assets/img/banner/flowers.png" alt="" />
+          <h3>Déjà commandé</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 col-lg-4" *ngFor="let reservation of reservations">
+        <div class="single_program">
+          <div class="program_inner card">
+            <div class="card-body">
+              <div class="card-text">{{ reservation.Montant }} DT</div>
+              <p>
+                {{ reservation.description }}
+              </p>
+              <!-- Additional service details here -->
+              <button
+                type="button"
+                *ngIf="reservation.accepted == false"
+                (click)="deleteReservation(reservation.reservationId)"
+                class="btn btn-primary boxed-btn3"
+              >
+                Supprimer
+              </button>
+              <button
+                type="button"
+                *ngIf="reservation.accepted == true"
+                (click)="navigateToAvis(reservation.reservationId)"
+                class="btn btn-primary boxed-btn3"
+              >
+                Avis
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ our_love-story -->
+

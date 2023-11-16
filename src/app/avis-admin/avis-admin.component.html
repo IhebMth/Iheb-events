@@ -1,0 +1,21 @@
+<div class="avis">
+  <table>
+    <thead>
+      <tr>
+        <th>Id Avis</th>
+        <th>Texte</th>
+        <th>Evaluation</th>
+        <th>Id Réservateur</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let avis of avisList">
+        <td>{{ avis.avisId }}</td>
+        <td>{{ avis.text }}</td>
+        <td>{{ avis.Evaluation }}</td>
+        <td>{{ avis.reservationId }}</td>
+        <td>{{ avis.userId }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

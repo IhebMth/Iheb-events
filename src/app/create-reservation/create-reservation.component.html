@@ -1,0 +1,69 @@
+<!-- our_love-story -->
+<div class="bg">
+<div class="love_story_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="section_title text-center">
+          <img src="../../assets/img/banner/flowers.png" alt="" />
+          <h3>Créer réservation</h3>
+        </div>
+      </div>
+    </div>
+    <form
+      (submit)="
+        onSubmit(
+          datedebut.value,
+          datefin.value,
+          description.value,
+          montant.value,
+          Title.value
+        )
+      "
+    >
+      <label for="Title">Title:</label>
+      <input type="text" #Title id="Title" name="Title" required />
+      <label for="date">Date debut:</label>
+      <input type="date" #datedebut id="datedebut" name="datedebut" required />
+
+      <label for="date">Date fin:</label>
+      <input type="date" #datefin id="datefin" name="datefin" required />
+
+      <label for="description">Description:</label>
+      <textarea
+        id="description"
+        #description
+        name="description"
+        required
+      ></textarea>
+
+      <label for="montant">Montant:</label>
+      <input type="number" #montant id="montant" name="montant" required />
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+  <!--/ our_love-story -->
+
+  <!-- attend_area -->
+  <!-- <div class="attending_area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+          <div class="main_attending_area">
+            <div class="flower_1 d-none d-lg-block">
+              <img src="../../assets/img/appointment/flower-top.png" alt="" />
+            </div>
+            <div class="flower_2 d-none d-lg-block">
+              <img
+                src="../../assets/img/appointment/flower-bottom.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>
+</div>

@@ -1,0 +1,89 @@
+.bg-image {
+
+  background: url('../../assets/img/fs.jpg');
+  background-size:cover;
+}
+.card {
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  filter: brightness(0.8);
+  box-shadow: 1px 1px 1px 2px #b8906d;
+}
+
+.card .card-body,
+.card .card-body h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card .card-body button {
+  width: 80%;
+  background-color: #f3b305;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.7s;
+  border-radius: 30px;
+
+}
+
+
+
+.card .card-body button:hover {
+  background-color: #f69c02;
+  transform: translateY(-5px);
+}
+
+
+
+.card .card-body button:focus {
+  outline: none;
+}
+
+
+
+.card-body {
+  margin-top: 10%;
+}
+
+.form-outline {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  margin-top: 10%;
+}
+
+.form-outline .form-control {
+  width: 80%;
+  padding: 5px 0;
+  margin: 10px auto;
+  border: 2px solid #f69c02;
+  outline: none;
+  resize: none;
+}
+
+.form-outline label {
+  padding: 5px 0;
+  margin: 0 10px;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+  text-indent: 10px;
+
+}
+
+.form-outline .form-control:placeholder-shown {
+  color: #f3b305;
+  font-weight: 800;
+  text-indent: 20px;
+}
+
+input
+{
+  text-indent: 20px ;
+}

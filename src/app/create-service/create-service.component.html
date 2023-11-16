@@ -1,0 +1,67 @@
+<section class="contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="contact-title">Créer un service</h2>
+      </div>
+      <div class="col-lg-8">
+        <form
+          (submit)="
+            onSubmit(titre.value, description.value, prix.value, photo.value)
+          "
+        >
+          <div class="text">Titre:</div>
+          <input
+            #titre
+            type="text"
+            name="titre"
+            class="form-control"
+            placeholder="titre"
+          />
+          <div class="text">description:</div>
+          <textarea
+            #description
+            name="titre"
+            class="form-control"
+            placeholder="description"
+          ></textarea>
+          <div class="text">prix:</div>
+          <input
+            #prix
+            type=" number"
+            name="pr"
+            class="form-control"
+            placeholder="prix"
+          />
+          <div class="text">Photo URL:</div>
+          <input
+            #photo
+            type=" number"
+            name="pr"
+            class="form-control"
+            placeholder="Photo URL"
+          />
+          <label for="category">Categorie:</label>
+          <select id="category" [(ngModel)]="selectedCategory" name="category">
+            <option
+              *ngFor="let category of categories"
+              [ngValue]="category.categoryServiceId"
+            >
+              {{ category.libelle }}
+            </option>
+          </select>
+          <button
+            type="submit"
+            class="btn btn-info text-light mt-4"
+            id="btn-save-event"
+          >
+            Sauvegarder</button
+          >&nbsp;&nbsp;
+          <button type="reset" class="btn btn-dark text-light mt-4">
+            Vider
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

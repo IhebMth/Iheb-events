@@ -1,0 +1,93 @@
+.bg
+{
+  background: url('../../assets/img/res.jpg');
+  background-size: cover;
+  background-position: center left 10%;
+}
+
+/* Style for the love story area */
+.love_story_area {
+  padding: 50px 0;
+}
+
+.section_title {
+  margin-bottom: 30px;
+}
+
+.section_title img {
+  max-width: 100%;
+}
+
+.section_title h3 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Style for the form */
+form {
+  margin-top: 30px;
+  width: 800px;
+  margin-left: 20%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: 800;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: #f4d404;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #EA7A49;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: 3%;
+}
+
+form button:hover
+{
+  background-color: #f0530f;
+
+}
+/* Style for the attending area */
+.attending_area {
+  padding: 100px 0;
+}
+
+.main_attending_area {
+  position: relative;
+}
+
+.flower_1,
+.flower_2 {
+  position: absolute;
+  top: 0;
+}
+
+.flower_1 img,
+.flower_2 img {
+  max-width: 100%;
+}
+
+.flower_1 {
+  left: 20% !important;
+}
+
+.flower_2 {
+  display: none !important;
+  top: -200px;
+  right: -50px;
+}

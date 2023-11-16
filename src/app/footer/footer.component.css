@@ -1,0 +1,47 @@
+/* Footer styling */
+footer {
+  background: url("../../assets/img/footer1.jpg");
+  background-size: cover;
+  background-position: center bottom 7%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* .married
+{
+  position: absolute;
+  right: 73%;
+  background: url("../../assets/img/married.png");
+  background-size:cover;
+  width: 400px;
+  height: 150px;
+  background-position: center;
+  border: none;
+} */
+
+footer a.btn-floating {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+footer ul.list-inline {
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul.list-inline li.list-inline-item {
+  display: inline-block;
+  margin-right: 15px;
+  color: black;
+  font-weight: 800;
+  font-style: italic;
+}
+
+footer ul.list-inline li.list-inline-item i {
+  margin-right: 5px;
+}
+
+/* Additional styling can be added as per your preference */

@@ -1,0 +1,55 @@
+section{
+  background: url('../../assets/img/ornements-floraux.jpg');
+  background-size: cover;
+  background-position: center left 10%;
+  opacity: .9;
+}
+
+.contact-section {
+  padding: 80px 0;
+}
+
+.contact-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 7%;
+  margin-bottom: 40px;
+}
+
+.media-body {
+  padding: 20px;
+  background-color: #f7efef;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.media-body:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  margin-bottom: 30px;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.btn-primary {
+  background-color:#EA7A49;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #f0530f;
+  cursor: pointer;
+}

@@ -1,0 +1,112 @@
+.reservation
+{
+  margin-left: 20%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"],
+button {
+  background-color: hsla(23, 98%, 51%, 0.484);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+button[type="submit"]:hover,
+button:hover {
+  background-color: rgba(247, 39, 2, 0.24);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  margin-top: 15px;
+}
+
+table th {
+  background-color: #EA7A49;
+  color: #fff;
+  margin-top: 15px;
+}
+
+table tr {
+  background-color: rgba(239, 237, 237, 0.24)
+}
+
+button {
+  background-color: hsla(23, 98%, 51%, 0.484);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(247, 39, 2, 0.24);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Animation effect */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+form,
+table {
+  animation: slideInFromLeft 0.5s ease-in-out;
+}

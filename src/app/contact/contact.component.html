@@ -1,0 +1,29 @@
+<div class="mask">
+  <section class="contact">
+    <!-- ... Existing HTML code ... -->
+
+    <div class="contactForm">
+      <form (ngSubmit)="sendEmail()">
+        <h2>Envoyez Message</h2>
+        <div class="inputBox">
+          <input type="text" name="name" required [(ngModel)]="name" />
+          <span>Votre Nom et Prénom</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="email" name="email" required [(ngModel)]="email" />
+          <span>Email</span>
+        </div>
+
+        <div class="inputBox">
+          <textarea name="message" required [(ngModel)]="message"></textarea>
+          <span>Votre Message...</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="submit" value="Envoyez" />
+        </div>
+      </form>
+    </div>
+  </section>
+</div>

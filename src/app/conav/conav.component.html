@@ -1,0 +1,66 @@
+<header>
+  <div class="header-area">
+    <div id="sticky-header" class="main-header-area">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-3 col-lg-3">
+            <div class="logo-img">
+              <a>
+                <img
+                  src="../../assets/img/winProd.png"
+                  alt=""
+                  style="height: 105px"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-9">
+            <div class="main-menu d-none d-lg-block">
+              <nav>
+                <ul id="navigation">
+                  <li>{{ user.user.nom }}</li>
+                  <li *ngIf="user.user.type === 'U' || user.user.type === 'P'">
+                    <a routerLink="accueil">Accueil</a>
+                  </li>
+
+                  <li *ngIf="user.user.type === 'U' || user.user.type === 'P'">
+                    <a routerLink="profile">Profil</a>
+                  </li>
+                  <li *ngIf="user.user.type === 'P'">
+                    <a routerLink="service">MaServices</a>
+                  </li>
+                  <li *ngIf="user.user.type === 'U'">
+                    <a routerLink="services">Services</a>
+                  </li>
+                  <li *ngIf="user.user.type === 'A'">
+                    <a routerLink="admin">Admin</a>
+                  </li>
+                  <li *ngIf="user.user.type === 'U'">
+                    <a routerLink="commande">Commande</a>
+                  </li>
+                  <li *ngIf="user.user.type === 'U'">
+                    <a routerLink="reserver">Reserver</a>
+                  </li>
+                  <li *ngIf="user.user.type === 'U' || user.user.type === 'P'">
+                    <a routerLink="contact">Contact</a>
+                  </li>
+
+                  <li (click)="logOut()">
+                    <a routerLink="accueil"
+                      ><img
+                        src="../../assets/img/logout.png"
+                        style="height: 20px"
+                    /></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mobile_menu d-block d-lg-none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

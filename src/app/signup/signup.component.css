@@ -1,0 +1,122 @@
+.sign-up .card {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  box-shadow: 1px 2px 2px 1px #2a1f15;
+  filter: brightness(1);
+  filter: opacity(1);
+}
+.mask {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(to bottom, #46404080, #46404080);
+}
+.sign-up,
+.sign-up h2,
+.sign-up a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+.sign-up .form-label {
+  color: black;
+  font-weight: 400;
+}
+.sign-up .btn {
+  background-color: hsla(23, 98%, 51%, 0.484);
+  width: auto;
+  border-radius: 30px;
+  transition: 0.7 all ease-in;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.sign-up .btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(247, 39, 2, 0.24);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.7s ease, height 0.3s ease;
+}
+
+.sign-up .btn:hover::before {
+  width: 200%;
+  height: 200%;
+}
+.sign-up .btn:focus,
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.form-outline {
+  position: relative;
+}
+
+.form-outline input {
+  padding: 1rem 1.5rem;
+  border: 1px solid rgb(255, 128, 0);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  width: 100%;
+}
+
+.form-outline input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 149, 0, 0.25);
+}
+
+.form-label {
+  color: #b8b0b0;
+  font-weight: 500;
+}
+
+.select-style {
+  width: 100%;
+  position: relative;
+}
+
+.select-style::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.select-style select {
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  width: 100%;
+  cursor: pointer;
+}
+
+.select-style select:focus {
+  border: 1px solid black;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 149, 0, 0.25);
+}
+
+.select-style select option {
+  color: #000;
+}

@@ -1,0 +1,68 @@
+<div class="reservation">
+  <h2>Reservations</h2>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Description</th>
+      <th>Montant</th>
+      <th>Nom résevateur</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let dd of reservations">
+      <td>{{ dd.reservation.date }}</td>
+      <td>{{ dd.reservation.description }}</td>
+      <td>{{ dd.reservation.Montant }}</td>
+      <td>{{ dd.user.nom }}</td>
+      <td>
+        <button
+          *ngIf="!dd.reservation.accepted"
+          (click)="acceptReservation(dd.reservation.reservationId)"
+        >
+          Accepter
+        </button>
+        <button
+          *ngIf="!dd.reservation.accepted"
+          (click)="refuseReservation(dd.reservation.reservationId)"
+        >
+          Refuser
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>
+<div class="reservation">
+  <h2>All Reservations info</h2>
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Date debut</th>
+      <th>Date fin</th>
+      <th>Montant</th>
+      <th>description</th>
+      <th>nom</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let dd of reservationsInfo">
+      <td>{{ dd.info.Title }}</td>
+      <td>{{ dd.info.dated }}</td>
+      <td>{{ dd.info.datef }}</td>
+      <td>{{ dd.info.Montant }}</td>
+      <td>{{ dd.info.description }}</td>
+      <td>{{ dd.user.nom }}</td>
+      <td>
+        <button
+          *ngIf="!dd.info.accepted"
+          (click)="acceptReservationinfo(dd.info.reservationinfoId)"
+        >
+          Accept
+        </button>
+        <button
+          *ngIf="!dd.info.accepted"
+          (click)="refuseReservationinfo(dd.info.reservationinfoId)"
+        >
+          Refuse
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>

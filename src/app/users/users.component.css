@@ -1,0 +1,71 @@
+table {
+  width: fit-content;
+  border-collapse: collapse;
+  margin-top: 3%;
+  margin-left: 15%;
+  padding: 20px;
+}
+
+.user-btn
+{
+margin-bottom: 40px;
+margin-left: 40%;
+margin-top: 40px;
+}
+
+
+.text
+{
+  font-weight: 800;
+  font-style: italic;
+  margin-left: 41%;
+  margin-top: 40px;
+
+
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #EA7A49;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+th {
+  background-color: #EA7A49;
+}
+
+
+ button {
+  background-color: hsla(23, 98%, 51%, 0.484);
+  width: auto;
+  border-radius: 30px;
+  transition: 0.7 all ease-in;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+ button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(247, 39, 2, 0.24);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.7s ease, height 0.3s ease;
+}
+
+ button:hover::before {
+  width: 200%;
+  height: 200%;
+}
+ button:focus,
+button:hover {
+  transform: scale(1.1);
+}

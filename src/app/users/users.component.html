@@ -1,0 +1,23 @@
+<h2 class="text">All Users</h2>
+<table>
+  <tr>
+    <th>Id util</th>
+    <th>Nom</th>
+    <th>prénom</th>
+    <th>Téléphone</th>
+    <th>Adresse</th>
+    <th>Email</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{ user.userId }}</td>
+    <td>{{ user.nom }}</td>
+    <td>{{ user.pernom }}</td>
+    <td>{{ user.num_tel }}</td>
+    <td>{{ user.addresse }}</td>
+    <td>{{ user.email }}</td>
+    <td *ngIf="user.type == 'P'">
+      <button (click)="removeUser(user.userId)">Supprimer</button>
+    </td>
+  </tr>
+</table>

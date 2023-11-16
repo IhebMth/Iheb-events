@@ -1,0 +1,106 @@
+<section
+  class="bg-image"
+
+>
+  <div class="mask d-flex align-items-center  gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px">
+            <div class="card-body p-2">
+              <h2 class="text-uppercase text-center mb-5">
+                Modifier votre Profil
+              </h2>
+              <form
+                (submit)="
+                  onSbmit(
+                    nom.value,
+                    prenom.value,
+                    email.value,
+                    adress.value,
+                    num_tel.value
+                  )
+                "
+              >
+                <div class="form-outline mb-4">
+
+                    <label class="form-label" for="form3Example1cg"
+                      >nom:</label>
+                  <input
+                    #nom
+                    [disabled]="true"
+                    [value]="user.user.nom"
+                    type="text"
+                    id="form3Example1cg"
+                    class="form-control form-control-lg"
+                    placeholder="Votre Nom"
+                  />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg"
+                    >prenom:</label>
+
+                  <input
+                    #prenom
+                    [disabled]="true"
+                    [value]="user.user.pernom"
+                    type="text"
+                    id="form3Example3cg"
+                    class="form-control form-control-lg"
+                    placeholder="Prénom"
+                  />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">email</label>
+
+                  <input
+                    #email
+                    type="email"
+                    [value]="user.user.email"
+                    id="form3Example4cg"
+                    class="form-control form-control-lg"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="form-outline mb-5">
+                  <label class="form-label" for="form3Example1cg"
+                      >Adresse:</label>
+                  <input
+                    #adress
+                    [value]="user.user.addresse"
+                    type="text"
+                    id="form3Example4cdg"
+                    class="form-control form-control-lg"
+                    placeholder="Adresse"
+                  />
+                </div>
+                <div class="form-outline mb-5">
+                  <label class="form-label" for="form3Example1cg"
+                      >Numero de Téléphone:</label>
+                  <input
+                    #num_tel
+                    [value]="user.user.num_tel"
+                    type="text"
+                    id="form3Example4cdg"
+                    class="form-control form-control-lg"
+                    placeholder="Telephone"
+                  />
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button
+                    type="submit"
+                    class="btn btn- btn-block btn-lg gradient-custom-4 text-body"
+                  >
+                    Modifer Profil
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

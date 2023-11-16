@@ -1,0 +1,64 @@
+<!-- program_details -->
+<div class="program_details_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="section_title text-center">
+          <img src="../../assets/img/banner/flowers.png" alt="" />
+          <h3>Services disponible</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 col-lg-4" *ngFor="let service of services">
+        <div class="single_program text-center">
+          <div class="program_inner card" >
+            <div class="card-body">
+              <h5 class="card-title">{{ service.nom_service }}</h5>
+              <div class="card-text">{{ service.prix }} DT</div>
+              <p>
+                {{ service.description }}
+              </p>
+              <div class="card-text">
+                <img src="{{ service.photo }}"  />
+              </div>
+              <!-- Additional service details here -->
+            </div>
+            <button
+              type="button"
+              (click)="
+                postReservation(
+                  service.serviceId,
+                  service.description,
+                  service.prix
+                )
+              "
+              class="btn btn-primary boxed-btn3"
+            >
+              Réserver
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ program_details -->
+
+<!-- attend_area
+<div class="attending_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+        <div class="main_attending_area">
+          <div class="flower_1 d-none d-lg-block">
+            <img src="../../assets/img/appointment/flower-top.png" alt="" />
+          </div>
+          <div class="flower_2 d-none d-lg-block">
+            <img src="../../assets/img/appointment/flower-bottom.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

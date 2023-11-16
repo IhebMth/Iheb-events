@@ -1,0 +1,95 @@
+
+.add-ctg
+{
+  margin-left: 50px;
+  width: 1200px;
+}
+.category
+{
+  margin-left: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+
+}
+
+form {
+  margin-bottom: 20px;
+  width: 500px;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid hsla(23, 74%, 83%, 0.932);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: hsla(23, 98%, 51%, 0.484);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+button[type="submit"]:hover {
+  background-color: rgba(247, 39, 2, 0.24);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+}
+
+table th,
+table td {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+table th {
+  background-color: hsla(23, 98%, 51%, 0.484);
+  color: #fff;
+}
+
+button {
+  background-color: hsla(23, 98%, 51%, 0.484);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0900a;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus {
+  outline: none;
+}

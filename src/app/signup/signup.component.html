@@ -1,0 +1,140 @@
+<section
+  class="sign-up bg-image"
+  style="
+    background-image: url('../../assets/img/fs.jpg');
+    filter: brightness(0.8);
+    z-index: -2;
+    background-size: cover;
+  "
+>
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Créer un compte</h2>
+
+              <form
+                (ngSubmit)="
+                  onSubmit(
+                    nom.value,
+                    prenom.value,
+                    adresse.value,
+                    email.value,
+                    type.value,
+                    userPwd.value,
+                    num_tel.value
+                  )
+                "
+              >
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">Nom</label>
+                  <input
+                    #nom
+                    required
+                    type="text"
+                    id="form3Example1cg"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">Prénom</label>
+                  <input
+                    #prenom
+                    required
+                    type="text"
+                    id="form3Example1cg"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg"
+                    >Adresse</label
+                  >
+                  <input
+                    #adresse
+                    required
+                    type="text"
+                    id="form3Example1cg"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example3cg"
+                    >Adresse Email</label
+                  >
+                  <input
+                    #email
+                    required
+                    type="email"
+                    id="form3Example3cg"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg"
+                    >Numéro de téléphone</label
+                  >
+                  <input
+                    #num_tel
+                    required
+                    type="text"
+                    id="form3Example1cg"
+                    class="form-control form-control-lg"
+                  />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cg"
+                    >Mot de passe</label
+                  >
+                  <input
+                    type="password"
+                    #userPwd
+                    id="form3Example4cg"
+                    required
+                    class="form-control form-control-lg"
+                  />
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cg"
+                    >Type d'inscription</label
+                  >
+
+                  <select
+                    #type
+                    required
+                    id="form3Example4cg"
+                    class="form-control form-control-lg"
+                  >
+                    <option [defaultSelected]>---choisir---</option>
+                    <option value="U">Réservateur</option>
+                    <option value="P">prestataire de service</option>
+                  </select>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button
+                    type="submit"
+                    class="btn btn- btn-block btn-lg gradient-custom-4 text-body"
+                  >
+                    Register
+                  </button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">
+                  Avez-vous déjà un compte?
+                  <a class="fw-bold text-body" routerLink="/signin"
+                    ><u>Se Connecter</u></a
+                  >
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

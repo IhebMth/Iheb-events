@@ -1,0 +1,60 @@
+<div class="service-admin">
+  <!-- <h2>Service Form</h2>
+<form>
+    <label for="serviceId">Service ID:</label>
+    <input type="number" id="serviceId" [(ngModel)]="newService.serviceId" name="serviceId" required>
+
+    <label for="nomService">Service Name:</label>
+    <input type="text" id="nomService" [(ngModel)]="newService.nom_service" name="nomService" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" [(ngModel)]="newService.description" name="description"></textarea>
+
+    <label for="prix">Price:</label>
+    <input type="text" id="prix" [(ngModel)]="newService.prix" name="prix" required>
+
+    <label for="localisation">Location:</label>
+    <input type="text" id="localisation" [(ngModel)]="newService.localisation" name="localisation" required>
+
+    <label for="userId">User ID:</label>
+    <input type="number" id="userId" [(ngModel)]="newService.userId" name="userId" required>
+
+    <button type="submit" (click)="addService()">Submit</button>
+</form>
+ -->
+  <h2>Tous les Services</h2>
+  <table>
+    <tr>
+      <th>Id Service</th>
+      <th>Nom Service</th>
+      <th>Description</th>
+      <th>Prix</th>
+      <th>Nom prestataire</th>
+
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let dd of services">
+      <td>{{ dd.service.serviceId }}</td>
+      <td>{{ dd.service.nom_service }}</td>
+      <td>{{ dd.service.description }}</td>
+      <td>{{ dd.service.prix }}</td>
+      <td>{{ dd.user.nom }}</td>
+      <td>{{ dd.service.valid ? "Valid" : "Not Valid" }}</td>
+      <td>
+        <button
+          *ngIf="!dd.service.valid"
+          (click)="acceptService(dd.service.serviceId)"
+        >
+          Accepter
+        </button>
+        <button
+          *ngIf="!dd.service.valid"
+          (click)="refuseService(dd.service.serviceId)"
+        >
+          Refuser
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>

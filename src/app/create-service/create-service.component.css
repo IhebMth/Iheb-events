@@ -1,0 +1,79 @@
+
+.contact-section
+{
+  background: url('../../assets/img/res.jpg');
+  background-size: cover;
+  background-position: center left 10%;
+  padding: 80px 0;
+}
+
+
+.contact-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: 18%;
+}
+
+.text
+{
+  margin-left: 19%;
+  padding: 1% 0;
+  font-weight: 600;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 19%;
+  color: black;
+  font-weight: 600;
+
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: 18%;
+
+}
+
+.btn-info,
+.btn-dark {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+
+.btn-info {
+  background-color: #EA7A49;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  margin-left: 20%;
+
+}
+
+.btn-dark {
+  background-color: #343a40;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-info:hover,
+.btn-dark:hover {
+  background-color: #f0530f;
+}

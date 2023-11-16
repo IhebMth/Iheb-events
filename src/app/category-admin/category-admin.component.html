@@ -1,0 +1,43 @@
+<div class="category">
+  <h2>Créer Categorie</h2>
+  <div>
+    <form (ngSubmit)="addCategory()">
+      <label for="categoryName">Nom catégorie:</label>
+      <input
+        id="categoryName"
+        [(ngModel)]="newCategory"
+        name="categoryName"
+        placeholder="Enter category name"
+        required
+      />
+
+      <label for="categoryType">Libellé catégorie:</label>
+      <input
+        id="categoryType"
+        [(ngModel)]="newCategoryType"
+        name="categoryType"
+        placeholder="Enter category type"
+        required
+      />
+
+      <button class="add-ctg" type="submit">Ajouter Catégorie</button>
+    </form>
+  </div>
+  <h2>Categories</h2>
+  <table>
+    <tr>
+      <th>Nom</th>
+      <th>Libellé</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let category of categories">
+      <td>{{ category.libelle }}</td>
+      <td>{{ category.type }}</td>
+      <td>
+        <button (click)="deleteCategory(category.categoryServiceId)">
+          Supprimer
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>

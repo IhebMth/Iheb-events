@@ -1,0 +1,117 @@
+.love_story_area,
+.attending_area {
+  padding-bottom: 40px;
+}
+
+.love_story_area .single_program,
+.attending_area .main_attending_area {
+  margin-bottom: 30px;
+}
+
+.love_story_area .section_title,
+.love_story_area .section_title h3,
+.attending_area .main_attending_area .flower_1,
+.attending_area .main_attending_area .flower_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.love_story_area .section_title img,
+.attending_area .main_attending_area .flower_1 img,
+.attending_area .main_attending_area .flower_2 img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.love_story_area .section_title h3 {
+  margin-left: 10px;
+  color: #000000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.love_story_area .single_program .program_inner {
+  background: url('../../assets/img/commande.jpg');
+  background-size: cover;
+
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.love_story_area .single_program .program_inner:hover
+{
+  transform: scale(1.1);
+}
+.love_story_area .single_program .card-body {
+  padding: 20px;
+  margin-left:60px;
+  margin-top: 40px;
+}
+
+.love_story_area .single_program .card-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.love_story_area .single_program p {
+  margin-bottom: 15px;
+}
+
+.attending_area .main_attending_area {
+  position: relative;
+}
+
+.attending_area .flower_1 img,
+.attending_area .flower_2 img {
+  width: 100%;
+}
+
+.boxed-btn3 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boxed-btn3:hover {
+  background-color: #f0530f;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #EA7A49;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #f0530f;
+}
+
+.btn-dark {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #23272b;
+}

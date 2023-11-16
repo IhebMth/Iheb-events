@@ -1,0 +1,85 @@
+<section class="contact-section">
+  <div class="container">
+
+
+
+    <div class="row">
+      <div class="col-12">
+        <h2 class="contact-title" style="margin-left: 400px;">Créer un évennement</h2>
+      </div>
+      <div class="col-lg-2"></div>
+      <div class="col-8 text-center">
+        <!-- (submit)="addEvent()" -->
+        <form class="form-contact contact_form">
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label text-dark" for="form2Example2" style="margin-right: 550px;">titre
+                  évènement</label>
+                <input type="text" class="form-control w-100" name="message" id="message" cols="30" rows="9"
+                  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder="">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label text-dark" for="form2Example2" style="margin-right: 600px;">description</label>
+                <!-- [(ngModel)]="event.description" -->
+                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
+                  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=""></textarea>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="form-label text-dark" for="form2Example2" style="margin-right: 250px;">date début</label>
+                <input type="datetime-local" class="form-control valid" name="debut" id="email"
+                  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Début">
+
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="form-label text-dark" for="form2Example2" style="margin-right: 250px;">date fin</label>
+                <input class="form-control" name="subject" id="subject" type="datetime-local"
+                  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Teléphone'" placeholder="Teléphone">
+
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label text-dark" for="form2Example2" style="margin-right: 550px;">catégorie
+                  évènement</label>
+                <select name="type" class="form-control">
+                  <option="true">--choisissez un type--</option>
+                    <!-- load options from categories array  *ngFor="let category of categories-->
+                    <option>
+                    </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+          </div>
+        </form>
+      </div>
+      <!-- <div class="">
+       
+      <div *ngFor="let event of events">
+        <h4>{{event.titre}}</h4>
+        <p>{{event.description}}</p>
+        <p>{{event.nom}}</p>
+        <p>{{event.start}}</p>
+        <p>{{event.end}}</p>
+      
+        <a class="btn btn-primary" [routerLink]="['/services']" [queryParams]="{id:event.id}">voir les services</a>
+
+      </div>
+      <hr>
+
+
+
+    </div> -->
+    </div>
+  </div>
+</section>
