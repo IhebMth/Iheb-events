@@ -102,15 +102,6 @@
   "cli": {
     "analytics": "29206085-580a-4d23-bfa0-5b4d99375ec4",
     "defaultCollection": "@ngrx/schematics"
-  },
-  "optimization": {
-    "styles": {
-      "budgets": [
-        {
-          "entry": "src/app/calendar/calendar.component.css",
-          "sizeLimit": "8.89 kB"
-        }
-      ]
-    }
   }
+
 }
