@@ -3,6 +3,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "types": [
       "@angular/localize"
     ]
@@ -12,5 +14,5 @@
   ],
   "include": [
     "src/**/*.d.ts"
-  ]
+  ],
 }
