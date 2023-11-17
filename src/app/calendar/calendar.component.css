@@ -1,77 +1,5 @@
-@import "../../../node_modules/angular-calendar/css/angular-calendar.css";
 
-.calendar
-{
-  height: 300px;
-}
-.calendar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  width: 130vh;
-
-}
-
-.btn {
-  margin-left: 40px;
-  background-color: #EA7A49;
-  width: auto;
-  border-radius: 30px;
-  transition: 0.7 all ease-in;
-  border: none;
-  position: relative;
-  overflow: hidden;
-  outline: none;
-}
-
-.btn::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  background-color: rgba(247, 39, 2, 0.24);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: width 0.7s ease, height 0.3s ease;
-}
-
-.btn:hover::before {
-  width: 200%;
-  height: 200%;
-}
-.btn:focus,
-.btn:hover {
-  transform: scale(1.1);
-}
-h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.calendar
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-margin-bottom: 40px;
-
-  margin-left: 100px;
-}
-.mwl-calendar-month-view {
-
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  padding: 5px;
-  background-color: #f0a80c;
-
-}
-
-/* Add animation and effects for the calendar-month-view */
-.mwl-calendar-month-view {
+/* .mwl-calendar-month-view {
   position: relative;
   overflow: hidden;
   height: fit-content;
@@ -144,4 +72,4 @@ margin-bottom: 40px;
 
 .mwl-calendar-month-view .cal-day-cell:hover {
   transform: scale(1.05);
-}
+}  */

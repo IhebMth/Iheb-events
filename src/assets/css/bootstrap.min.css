@@ -4013,9 +4013,9 @@ tbody.collapse.show {
   border-color: #80bdff
 }
 
-.custom-file-input:lang(en)~.custom-file-label::after {
+/* .custom-file-input:lang(en)~.custom-file-label::after {
   content: "Browse"
-}
+} */
 
 .custom-file-label {
   position: absolute;
