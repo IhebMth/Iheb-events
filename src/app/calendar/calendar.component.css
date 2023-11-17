@@ -1,4 +1,4 @@
-@import "../../../node_modules/angular-calendar/css/angular-calendar.css";
+/* @import "../../../node_modules/angular-calendar/css/angular-calendar.css";
 
 .calendar
 {
@@ -71,6 +71,7 @@ margin-bottom: 40px;
 }
 
 /* Add animation and effects for the calendar-month-view */
+/* 
 .mwl-calendar-month-view {
   position: relative;
   overflow: hidden;
@@ -144,4 +145,4 @@ margin-bottom: 40px;
 
 .mwl-calendar-month-view .cal-day-cell:hover {
   transform: scale(1.05);
-}
+} */
